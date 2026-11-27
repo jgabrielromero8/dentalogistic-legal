@@ -16,7 +16,7 @@
 <body>
 
 <h1>🦷 Política de Privacidad — DentaLogistic</h1>
-<p class="fecha">Última actualización: Julio 2026</p>
+<p class="fecha">Última actualización: Noviembre 2026</p>
 
 <p>DentaLogistic ("la aplicación", "nosotros") es desarrollada por CoDev. Esta política describe cómo se maneja la información dentro de la aplicación.</p>
 
@@ -34,6 +34,8 @@
 <p>Toda la información mencionada en la sección anterior (incluyendo imágenes y documentos clínicos) se almacena <strong>localmente en el dispositivo</strong> donde está instalada la aplicación (base de datos local SQLite). DentaLogistic no envía esta información a servidores externos ni a la nube. El doctor o clínica es responsable de los respaldos y la seguridad física del dispositivo donde opera la aplicación.</p>
 <p><strong>Respaldo voluntario:</strong> la aplicación ofrece una función opcional para que el doctor genere manualmente un archivo de respaldo de toda su información y lo comparta usando las apps ya instaladas en su dispositivo (por ejemplo, Google Drive, correo electrónico). Esta acción la inicia y controla el propio doctor; CoDev no tiene acceso ni control sobre el archivo de respaldo una vez que se comparte fuera de la aplicación, ni sobre dónde el doctor decide almacenarlo.</p>
 
+<p><strong>Calendario del dispositivo (opcional):</strong> la aplicación ofrece funciones opcionales para llevar las citas al calendario del dispositivo: (a) exportar una cita o un conjunto de citas como archivo de calendario (.ics) y compartirlo con las apps que el doctor elija; (b) abrir la app de calendario del dispositivo con los datos de una cita precargados para que el doctor la confirme; y (c) sincronización automática, desactivada por defecto, que se activa únicamente si el doctor lo decide en <em>Mi Clínica</em>. En ese caso la aplicación crea un calendario propio llamado "DentaLogistic" <strong>de tipo local, almacenado solo en el dispositivo</strong>, y escribe en él un evento por cada cita (nombre del paciente, fecha, hora, duración y motivo de la cita). La aplicación <strong>no lee ni modifica</strong> los demás calendarios o eventos del dispositivo, y CoDev no recibe ninguno de estos datos. Los eventos pueden desaparecer o conservarse al desactivar la función, según lo elija el doctor, o al borrar los datos de la app. Los archivos .ics compartidos y cualquier copia que el doctor haga fuera de la app quedan bajo su control, no el de CoDev.</p>
+
 <h2>3. Información de suscripción y pagos</h2>
 <p>Si el usuario adquiere la versión Premium de la aplicación, el procesamiento del pago se realiza a través de <strong>Google Play Billing</strong>. DentaLogistic no almacena ni tiene acceso a datos de tarjetas de crédito/débito; estos son procesados directamente por Google de acuerdo con su propia política de privacidad.</p>
 
@@ -44,6 +46,9 @@
 <ul>
     <li><strong>Internet:</strong> requerido para mostrar publicidad (versión gratuita) y procesar la suscripción Premium.</li>
     <li><strong>Cámara:</strong> requerido para tomar fotos clínicas dentro del módulo de Imagenología (función Premium). Las fotos se guardan únicamente en la base de datos local del dispositivo.</li>
+    <li><strong>Notificaciones:</strong> requerido (Android 13 o superior) para mostrar en el propio dispositivo el recordatorio de cada cita, 30 minutos antes de su hora. Los recordatorios se programan y se muestran localmente; no se envía información a servidores.</li>
+    <li><strong>Calendario (lectura y escritura):</strong> solicitado <em>únicamente</em> si el doctor activa la sincronización opcional con el calendario en Mi Clínica. Se usa exclusivamente para crear, actualizar y eliminar los eventos de las citas dentro del calendario local "DentaLogistic" creado por la app. No se usa para ningún otro fin ni se comparte con terceros. Si no se activa la función, el permiso no se solicita.</li>
+    <li><strong>Iniciar al encender el dispositivo:</strong> permite reprogramar los recordatorios de citas después de reiniciar el teléfono. No recopila información.</li>
     <li><strong>Almacenamiento / galería:</strong> requerido para generar y compartir archivos PDF de presupuestos y agendas, seleccionar el logo de la clínica (función Premium), adjuntar imágenes o documentos existentes al módulo de Imagenología (función Premium), y para la función opcional de respaldo/restauración de la información de la app.</li>
 </ul>
 
